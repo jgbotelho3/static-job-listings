@@ -25,8 +25,7 @@ html{
 }
     body{
         font-family: ${theme.fonts.family.primary};
-        background-color: ${theme.colors.primary};
-        color: #fff;
+        background-color: ${theme.colors.lightCyanBackground};
     }
 `;
 
