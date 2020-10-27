@@ -14,7 +14,7 @@ export const Container = styled.div`
     box-shadow: 1px 5px 10px rgba(123, 142, 142, 0.1);
 
     ${media.greaterThan('medium')`
-        height: 10rem;
+        height: 14rem;
     `}
 
     &::before{

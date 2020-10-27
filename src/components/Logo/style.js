@@ -18,7 +18,7 @@ export const Container = styled.div`
     ${media.greaterThan('medium')`
         width: 8rem;
         height: 8rem;
-        top: 0;
+        top: 2rem;
     `}
     }
 `
