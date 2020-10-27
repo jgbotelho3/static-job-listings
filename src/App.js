@@ -4,7 +4,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Card />
+        <div style={{marginTop: '20rem'}}>
+          <Card />
+        </div>
+       
       </header>
     </div>
   );

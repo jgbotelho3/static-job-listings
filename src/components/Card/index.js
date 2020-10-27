@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import * as S from './style';
+import Logo from "../Logo";
+
+import img from "../../images/photosnap.svg";
+import * as S from "./style";
 
 const Card = () => {
-return(
+  return (
     <S.Container>
-        <h1>Card infos here</h1>
+      <Logo img={img} title="Imagem de teste" />
     </S.Container>
-    
-)
-}
+  );
+};
 
 export default Card;
