@@ -4,8 +4,8 @@ import media from 'styled-media-query';
 
 export const Container = styled.div`
     width: 8rem;
-    height: 8rem;
     margin-left: 2rem;
+    margin-bottom: 0;
     position: relative;
 
      > img {
@@ -14,7 +14,7 @@ export const Container = styled.div`
     border-radius: 50%;
     position: absolute;
     top: -4rem;
-
+    
     ${media.greaterThan('medium')`
         width: 8rem;
         height: 8rem;

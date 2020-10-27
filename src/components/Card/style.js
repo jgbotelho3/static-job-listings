@@ -12,9 +12,12 @@ export const Container = styled.div`
     position: relative;
     color: ${theme.colors.primary};
     box-shadow: 1px 5px 10px rgba(123, 142, 142, 0.1);
+    display:flex;
+    flex-direction: column;
 
     ${media.greaterThan('medium')`
         height: 14rem;
+        flex-direction: row;
     `}
 
     &::before{

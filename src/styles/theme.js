@@ -16,10 +16,12 @@ export const theme = {
             bold: 700
         },
         size:{
-            normal: '1rem'
+            normal: '1rem',
+            medium: '1.5rem',
+            large: '2rem'
         },
         family:{
             primary: " 'Spartan', sans-serif"
         }
-    }
+    },
 }
