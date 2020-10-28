@@ -4,8 +4,8 @@ import media from "styled-media-query";
 import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
-  width: calc(100% - margin);
-  height: calc(100vh / 2.5);
+  min-width: calc(100% - margin);
+  min-height: calc(100vh / 2.5);
   background-color: #fff;
   padding: 1rem;
   margin: 1.5rem;
@@ -17,8 +17,11 @@ export const Container = styled.div`
   flex-direction: column;
 
   ${media.greaterThan("medium")`
-        height: 14rem;
+        min-height: 14rem;
         flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        
     `}
 
   &::before {
@@ -33,9 +36,19 @@ export const Container = styled.div`
 `;
 //Heading Styles
 export const HeadingContainer = styled.div`
-  width: 100%;
   margin-left: 2rem;
   margin-top: 2.5rem;
+
+  ${media.greaterThan("medium")`
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    margin-left: 10rem;
+    position:relative;
+    margin-bottom: 1rem;
+  `}
 `;
 
 export const TitleContainer = styled.div`
@@ -66,6 +79,14 @@ export const MoreInfo = styled.h3`
 `;
 
 //Languages
-export const Languages = styled.div`
+export const Tools = styled.div`
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
 
-`
+  ${media.greaterThan("medium")`
+justify-content: center;
+flex-wrap: nowrap;
+`}
+`;

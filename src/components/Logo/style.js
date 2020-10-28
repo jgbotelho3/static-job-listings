@@ -4,7 +4,6 @@ import media from 'styled-media-query';
 
 export const Container = styled.div`
     width: 8rem;
-    margin-left: 2rem;
     margin-bottom: 0;
     position: relative;
 
@@ -13,12 +12,13 @@ export const Container = styled.div`
     height: 6rem;
     border-radius: 50%;
     position: absolute;
-    top: -4rem;
+    top: -6rem;
     
     ${media.greaterThan('medium')`
         width: 8rem;
         height: 8rem;
-        top: 2rem;
+        top: 1rem;
+        left: -8.5rem;
     `}
     }
 `
