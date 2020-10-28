@@ -5,7 +5,7 @@ import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
   min-width: calc(100% - margin);
-  min-height: calc(100vh / 2.5);
+  min-height: calc(100vh / 5);
   background-color: #fff;
   padding: 1rem;
   margin: 1.5rem;
@@ -38,6 +38,7 @@ export const Container = styled.div`
 export const HeadingContainer = styled.div`
   margin-left: 2rem;
   margin-top: 2.5rem;
+  position:relative;
 
   ${media.greaterThan("medium")`
     display: flex;
